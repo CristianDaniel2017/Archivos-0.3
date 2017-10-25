@@ -34,7 +34,7 @@ class LineItem < ActiveRecord::Base
 belongs_to :product
 end
  
- --#Creación del Carrito de Compra
+ --#Creación Compra
  def add_to_cart
 product = Product.find(params[:id])
 @cart = find_cart
